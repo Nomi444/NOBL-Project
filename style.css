@@ -1,0 +1,893 @@
+
+@font-face {
+  font-family: 'FlechaL-Bold';
+  src: url('fonts/FlechaL-Bold.68f5d1f7.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FlechaS-Medium';
+  src: url('fonts/FlechaS-Medium.9704c28d.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maison Neue Bold';
+  src: url('fonts/MaisonNeue-Bold.d6075c8f.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maison Neue Book';
+  src: url('fonts/MaisonNeue-Book.68a06771.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maison Neue Demi';
+  src: url('fonts/MaisonNeue-Demi.1ab1fb45.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maison Neue Medium';
+  src: url('fonts/MaisonNeue-Medium.33ecd1c1.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maison Neue Mono';
+  src: url('fonts/MaisonNeue-Mono.e92a7b41.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Navbar */
+
+
+.navbar {
+  font-family: "Maison Neue Bold", sans-serif;
+  border-bottom: 5px solid #000000;
+  letter-spacing: 1px;
+}
+
+.background {
+  background-color: #f9f0e3;
+}
+
+.nav-set {
+  list-style: none;
+  text-decoration: none;
+}
+
+.set-svg{
+  width: 15%;
+  /* display: flex !important;
+  justify-content: center !important; */
+}
+
+
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+.right-content span {
+  margin-right: 2rem;
+  letter-spacing: 1px;
+}
+.right-content svg {
+  margin-right: 4.5rem;
+}
+.pipe {
+  margin: 0 0.5rem;
+  font-size: 2.2rem; /* Adjusted size */
+  display: inline-block;
+  line-height: 1;
+
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+/* Hide navbar when scrolling down on desktop */
+@media (min-width: 992px) {
+  #navbar.hidden {
+    top: -100px; /* Adjust as needed */
+  }
+}
+
+
+@media (max-width: 992px) {
+  /* .set-the-width {
+    display: flex !important;
+    justify-content: start;
+    width: 100%;
+  } */
+  .d-lg-flex {
+    display: none !important;
+  }
+  .navbar-collapse {
+    display: none !important;
+  }
+
+
+}
+
+.offcanvas {
+  width: 100%;
+  background-color: #f9f0e3;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Maison Neue Medium', sans-serif;
+}
+
+footer {
+  margin-top: auto;
+  font-family: 'Maison Neue Book';
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.mt-13{
+  margin-top: 15rem;
+}
+
+
+/* main content */
+.set-background {
+  background-color: #f9f0e3;
+  /* padding-bottom: 15rem; */
+}
+.fs-10 {
+  font-size: 7rem;
+  font-family: "FlechaL-Bold", serif;
+  padding: 5rem 0;
+  animation-delay: 35ms;
+}
+
+
+
+.set-color {
+  color: #000000a6;
+  font-family: 'Maison Neue Book', sans-serif;
+}
+
+.reduce-space {
+  margin-top: -2.5rem;
+  margin-bottom: 10rem;
+}
+
+.set-frame {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.set-img {
+  width: 445px;
+  height: 445px;
+  transform: translateY(50px);
+}
+
+.separator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.separator::after {
+  content: "";
+  border-right: 2px solid #000;
+  z-index: 1;
+  height: 200px;
+}
+
+.goal-circle {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.fs-11{
+  font-size: 6rem;
+  font-family: "FlechaL-Bold", serif;
+  padding: 5rem 0;
+  word-break: normal;
+  animation-delay: 70ms;
+}
+
+
+
+/* red section */
+
+.section-red{
+   background-color: #ff0a0b;
+   padding-bottom: 15rem;
+}
+
+.set-border{
+  border-bottom: 1px solid black;
+}
+
+.fs-13{
+  font-size: 3.063rem;
+  font-family: "FlechaL-Bold", serif;
+  letter-spacing: 0.5px;
+}
+
+.setting{
+  font-family: "Maison Neue Mono", monospace;
+  letter-spacing: 1.9px;
+}
+
+p{
+  font-family: "Maison Neue Book", sans-serif;
+}
+
+.btn-primary-set{
+  font-family: "Maison Neue Bold", sans-serif;
+  background-color: rgb(0, 0, 0, .2) !important;
+  color: #fff !important;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+.btn-primary-set:hover{
+  background-color: #000 !important;
+}
+
+.border-start-custom {
+  border: 1px solid black; /* Adjust the thickness as needed */
+  width: 100%; 
+  
+}
+
+.setting-color{
+  font-family: "Maison Neue Mono", monospace;
+  letter-spacing: 1.9px;
+  margin-top: 9rem;
+}
+
+.set-content li {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 0.6rem;
+  font-family: 'Maison Neue Book', sans-serif;
+}
+
+
+/* Initial state when not in view */
+.animate-up {
+  transform: translateY(50px); /* Adjust based on desired effect */
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* State when in view */
+.in-view {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+.image-rotation-container {
+  position: relative;
+}
+
+.image-rotation-container img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-rotation-container img.active {
+  opacity: 1;
+}
+
+
+
+@media (max-width: 992px) {
+  .col-lg-4 {
+    display: none;
+  }
+  /* .col-md-6 {
+    display: none;
+  } */
+  /* .col-md-6:first-of-type,
+.col-md-6:last-of-type {
+    display: none;
+  } */
+  
+  
+ /* .col-md-6:nth-of-type(2) {
+    display: block;
+  }  */
+
+  .border-start {
+    border-left: 0;
+  }
+  .border-end {
+    border-right: 0;
+  }
+
+.fs-13 {
+  font-size: 3.93rem;
+}
+
+.set-content li{
+  font-size: 2.25rem !important; /* Adjust the list item font size */
+  padding: 0.75rem 3rem 2rem 2rem !important;
+  gap: 2.4rem !important;
+  border-radius: 2rem;
+}
+
+.setting-color{
+  font-size: 1.9rem !important;
+  margin-bottom: 4rem !important;
+}
+}
+
+
+
+
+
+
+
+/* black section */
+
+.black-section{
+  background-color: #000000;
+  padding-bottom: 13.375rem;
+}
+
+.main-color{
+  color: #ff0a0b;
+  font-family: "Maison Neue Mono", monospace;
+  letter-spacing: 1.9px;
+  padding-top: 13rem;
+}
+
+.color-combination{
+  font-family: "FlechaL-Bold", serif;
+  font-size: 6.125rem;
+  letter-spacing: 0.1rem;
+}
+
+.setting-image{
+  padding-top: 10rem;
+
+}
+
+.set-accordion-color{
+  background-color: #000000;
+  padding-top: 10rem;
+}
+
+.accordion-item {
+  border: none;
+}
+
+
+.accordion-button{
+  font-family: 'Maison Neue Medium', sans-serif;
+  font-size: 3.5rem !important;
+}
+
+
+.accordion-body{
+  font-family: 'Maison Neue Book', sans-serif;
+  color: #b2b2b2;
+  border-top: 1px solid white;
+  padding-top: 2rem;
+}
+
+.accordion-body::after {
+  content: "";
+  display: block;
+  margin-top: 16px;
+  border-bottom: 1px solid white;
+  padding: 3px;
+}
+
+.Digital{
+  font-family: 'Maison Neue' Medium, sans-serif;
+  
+}
+
+.btn-primary-setting{
+  background-color: #ff0a0b;
+  font-size: 0.75rem;
+  font-family: "Maison Neue Bold", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.set-the-border{
+  border-bottom: 3px solid white;
+  padding-top: 10rem;
+  
+}
+
+
+/* another black section */
+
+.another-section{
+  font-size: 9rem;
+  font-family: "FlechaL-Bold", serif;
+  letter-spacing: 0.2rem;
+}
+
+.span-color{
+  color: #ff0a0b;
+  font-family: 'Maison Neue Mono', monospace;
+  letter-spacing: 2.5px;
+  margin-top: 7rem;
+  
+}
+
+.paragraph{
+  font-family: 'FlechaS-Medium', sans-serif;
+}
+
+.btn-secondary-set{
+  background-color: #ff0a0b !important;
+  font-size: 0.75rem;
+  font-family: "Maison Neue Bold", sans-serif;
+  letter-spacing: 0.9px;
+  transition: all .1s linear;
+}
+
+.process-setting{
+  font-family: 'Maison Neue Demi', sans-serif;
+}
+
+.paragraph-setting{
+  font-family: 'Maison Neue Book', sans-serif;
+  color: #b2b2b2;
+  letter-spacing: 0.3px;
+}
+
+.btn-success-set{
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+  font-family: "Maison Neue Bold", sans-serif;
+  letter-spacing: 0.9px;
+}
+
+.btn-success-set:hover {
+  background-color: #ff0a0b;
+  transition: all .1s linear;
+}
+
+/* side text work */
+.side-text{
+  font-family: 'Maison Neue Medium', sans-serif;
+}
+
+.blend{
+  mix-blend-mode: luminosity;
+  width: 320px;
+  height: 200px;
+}
+.core{
+  color: #ff0a0b;
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+
+/* Initial state when not in view */
+.animate-up {
+  transform: translateY(50px); /* Adjust based on desired effect */
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* State when in view */
+.in-view {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+@media (max-width: 992px) {
+  
+  .another-section {
+    font-size: 9rem;
+    margin-bottom: 10rem;
+}
+
+.span-color {
+    font-size: 1.8rem !important;
+    margin-top: 2rem;
+}
+
+.paragraph {
+    font-size: 3.3rem !important;
+}
+
+.btn-secondary-set{
+  font-size: 1.75rem;
+  
+}
+
+.process-setting{
+  font-size: 2.4rem !important;
+}
+
+.process-setting img{
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-right: 1rem;
+}
+
+.btn-success-set{
+  font-size: 1.75rem;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.border-end {
+    border: none !important;
+}
+
+.pe-lg-5 {
+    padding-right: 0 !important;
+}
+
+.col-md-4 {
+    width: 100% !important;
+    padding-top: 8rem;
+}
+
+.setting-border{
+  border-top: 2px solid gray;
+  margin: 1rem;
+}
+
+
+.image-border{
+  margin-bottom: 3rem !important;
+  margin-top: 3rem;
+}
+
+.text-start img {
+    width: 40%;
+}
+
+
+.side-text {
+    font-size: 3.2rem !important;
+    margin-top: 0;
+    border-bottom: none;
+}
+
+.core {
+  font-size: 1.8rem; 
+  margin-top: 4rem;
+  display: block;
+}
+
+
+
+
+.paragraph-setting {
+    font-size: 3rem !important;
+    padding-top: 1.25rem;
+}
+
+.blend {
+    width: 100%;
+    height: auto;
+}
+
+}
+
+
+
+@media (max-width: 992px) {
+  .main-color {
+    text-align: center !important;
+    font-size: 1.9rem !important;
+    margin-bottom: 3rem;
+  }
+
+  .color-combination{
+    font-size: 7rem;
+    text-align: center !important;
+  }
+
+  .setting-image {
+    padding-top: 7rem;
+
+  }
+
+  /* .set-accordion-color {
+    padding-top: 36rem;
+  } */
+
+  .accordion-item{
+    border-right: none;
+  }
+
+  
+
+
+  .accordion-body {
+    font-family: "Maison Neue Book", sans-serif;
+    font-size: 1rem !important;
+  }
+
+  .set-the-border {
+    margin-top: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1.25rem;
+  }
+
+  .btn-primary-setting{
+    font-size: 1.75rem;
+    font-weight: normal !important;
+    padding: 1.25 !important;
+  }
+
+  .setting-image img {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+/* yellow section */
+
+.Yellow-section{
+  background-color: #fff200;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.change{
+  font-size: 0.8rem;
+  letter-spacing: 0.9px;
+  font-family: "Maison Neue Bold", sans-serif;
+  padding-bottom: 2.5rem;
+
+}
+
+.text-setting{
+  font-family: 'Maison Neue Medium', sans-serif;
+}
+
+.concept-color{
+  color: #000000a6;
+  font-family:  'Maison Neue Book', sans-serif;
+}
+
+.btn-outline-dark{
+  font-family: "Maison Neue Bold", sans-serif;
+  letter-spacing: 0.9px;
+  font-size: 0.8rem;
+  
+}
+
+.glide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+
+
+
+.effect-img {
+  filter: grayscale(1) !important;
+  transition: all .3s;
+}
+
+
+/* .glides__track {
+  padding-top: 1rem;
+} */
+
+
+.img-spacing{
+  margin: 10px 0;
+
+}
+
+.effect-img:hover {
+ filter: grayscale(0) !important;
+}
+
+
+.text-setting {
+  margin-top: 3rem;
+}
+
+.btn-icon {
+  font-size: 0.7rem;
+}
+
+
+
+
+
+/* lets talk secction */
+
+.image-section{
+  background-color: #f9f0e3;
+  padding-bottom: 20rem;
+}
+
+.form-section{
+  background-color: #ffffff;
+  padding-bottom: 3rem;
+}
+
+.set-the-font{
+  font-size: 6.13rem;
+  font-family: "FlechaL-Bold", serif;
+}
+
+.paragraph-talk{
+  color: #000000a6;
+  font-family: 'Maison Neue Book', sans-serif;
+}
+
+.mt-11{
+  margin-top: 7rem;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  font-family: 'Maison Neue Book', sans-serif;
+  border-radius: 0;
+  background: transparent;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
+.btn-custom {
+  font-family: "Maison Neue Bold", sans-serif;
+  background-color: #ff0a0b !important;
+  color: white !important;
+  border-radius: 100px;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.btn-custom i {
+  margin-left: 5px;
+  font-size: 0.7rem;
+}
+.form-check-label {
+  text-transform: uppercase;
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+}
+.form-label{
+  color: #d2d2d2;
+  font-weight: normal;
+  font-family: "Maison Neue Bold", sans-serif;
+
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .image-section {
+    padding-bottom: 17rem !important;
+  }
+  
+  .form-section {
+    padding-bottom: 3rem;
+  }
+  
+  .set-the-font {
+    font-size: 4rem;
+  }
+  
+  .mt-11 {
+    margin-top: 5rem;
+  }
+
+  .form-check-label{
+    margin-top: 3rem;
+  }
+
+  .form-check-input{
+    margin-top: 3rem;
+
+  }
+}
+
+@media (max-width: 767.98px) {
+  .image-section {
+    padding-bottom: 5rem;
+  }
+  
+  .form-section {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .set-the-font {
+    font-size: 3rem;
+  }
+  
+  .mt-11 {
+    margin-top: 3rem;
+  }
+}
+
+/* footer section */
+
+.modern-section{
+  background-color: #000000;
+}
+
+.footer-paragraph{
+  font-family: 'FlechaS-Medium', sans-serif;
+}
+
+.set-font-size{
+  font-size: 0.8rem;
+  letter-spacing: 0.9px;
+  margin-top: 2rem;
+}
+
+.set-font{
+  font-family: 'Maison Neue Book', sans-serif;
+}
+
+.svg-container:hover {
+  background-color: black !important;
+}
+.py-6{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 992px) {
+
+  .footer-column + .footer-column {
+    margin-top: 1rem;
+  }
+}
