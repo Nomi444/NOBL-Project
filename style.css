@@ -44,6 +44,10 @@
   font-style: normal;
 }
 
+*::selection{
+  background-color: #fff200;
+  color: #000;
+}
 /* Navbar */
 
 
@@ -75,7 +79,7 @@
   align-items: center;
 }
 .right-content span {
-  margin-right: 2rem;
+  margin-right: 1.3rem;
   letter-spacing: 1px;
 }
 .right-content svg {
@@ -90,7 +94,7 @@
 }
 
 #navbar {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -106,49 +110,238 @@
 
 
 @media (max-width: 992px) {
-  /* .set-the-width {
-    display: flex !important;
-    justify-content: start;
-    width: 100%;
-  } */
+  
   .d-lg-flex {
     display: none !important;
   }
   .navbar-collapse {
     display: none !important;
   }
+  .set-padding{
+    margin-top: 10px;
+    padding: 2rem;
+    /* border-bottom: 5px solid #000000; */
 
+  }
 
 }
 
-.offcanvas {
-  width: 100%;
+
+
+/* hover effect top canvas */
+
+
+
+.set-content-font{
+  font-family: 'Maison Neue Bold', sans-serif;;
+
+}
+.btn-danger-setting{
+  background-color: #ff0a0b !important;
+  font-family: 'Maison Neue Bold', sans-serif;;
+  font-size: 0.8rem;
+  letter-spacing: 1.8px;
+}
+
+.btn-danger-setting img {
+  transition: transform 0.3s ease;
+}
+
+.btn-danger-setting:hover img {
+  transform: translateX(5px);
+}
+
+.icon-white{
+  filter: invert(1);
+}
+
+
+/* desktop offcanvas */
+
+.offcanvas-title{
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 0.938rem;
+  letter-spacing: 1px;
+}
+.canvas-setup{
+  min-width: 40vw;
+}
+
+.btn-danger-set {
+  background-color: #00000033;
+  font-size: 0.75rem;
+  font-family: "Maison Neue Bold", sans-serif;
+
+}
+
+.btn-danger-set:hover{
+  background-color: #000;
+}
+
+
+.offcanvas-color{
+  background-color: #ff0a0b;
+}
+
+.offcanvas-body{
+  font-family: 'FlechaL-Bold', serif;
+}
+
+.fs-15{
+  font-size: 3rem;
+}
+.fs-15:hover {
+  color: #000;
+}
+
+.list-setting:hover{
+ color: #000 !important;
+}
+
+
+
+
+/* responsive canvas */
+
+
+.custom-canvas {
+  min-width: 100vw;
+  font-size: 2rem;
   background-color: #f9f0e3;
+  overflow: scroll;
 }
 
-.offcanvas-header {
+
+
+.offcanvas-header-sides {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.offcanvas-body {
+.offcanvas-body-start {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Maison Neue Medium', sans-serif;
+  line-height: 3;
+  font-size: 3rem;
+}
+.btn-setting{
+  background-color: transparent;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  font-family: "Maison Neue Bold", sans-serif;
 }
 
+.icon-black{
+  filter: invert(1);
+  font-family: "Maison Neue Bold", sans-serif;
+
+}
 footer {
   margin-top: auto;
-  font-family: 'Maison Neue Book';
-  font-size: 1.2rem;
+  font-family: 'Maison Neue Book', sans-serif;
+  font-size: 2rem;
   color: #000;
+  line-height: 1.3;
 }
 
 .mt-13{
   margin-top: 15rem;
 }
+
+
+
+
+
+
+
+
+/* offcanvas-top */
+
+.offcanvas-top{
+  min-height: 65vh;
+  background-color: #f9f0e3;
+}
+
+.offcanvas-title{
+  letter-spacing: 1px;
+}
+
+.set-button:hover{
+  background-color: #ff0a0b;
+}
+
+.btn-search{
+  background-color: #ff0a0b !important;
+  font-family: "Maison Neue Bold", sans-serif;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+
+.btn-search img {
+  transition: transform 0.3s ease;
+}
+
+.btn-search:hover img {
+  transform: translateX(5px);
+}
+
+
+.set-search{
+  letter-spacing: 1.5px;
+  color: #ff0a0b;
+  font-family: 'Maison Neue Mono', monospace;
+}
+
+
+.text-content {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+
+.set-button img {
+  transition: transform 0.3s ease; 
+}
+
+
+.text-content:hover {
+  transform: translateX(-5px); /* Moves the entire button right, adjust as needed */
+}
+
+
+input {
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.mt-20{
+  margin-top: 15rem;
+}
+.set-list-color{
+  color: #b2b2b2;
+}
+
+.set-list-color:hover{
+  color: #000;
+}
+
+.set-text-red-color{
+  color: #ff0a0b;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  font-family: "Maison Neue Bold", sans-serif;
+}
+
+.set-text-red-color:hover{
+  background-color: #ff0a0b;
+  color: white;
+}
+
 
 
 /* main content */
@@ -161,6 +354,21 @@ footer {
   font-family: "FlechaL-Bold", serif;
   padding: 5rem 0;
   animation-delay: 35ms;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 2s ease-in-out forwards;
 }
 
 
@@ -218,13 +426,37 @@ footer {
   animation-delay: 70ms;
 }
 
+@media (max-width: 992px) {
+  
+  .fs-10 {
+    font-size: 6rem;
+    padding-top: 10rem;
+  }
+  .set-font-color{
+    font-size: 2.5rem !important;
+    text-wrap: nowrap;
+  }
+
+  .set-paragraph{
+    font-size: 5.5rem;
+  }
+}
+
+
+
+
+
+
 
 
 /* red section */
 
 .section-red{
    background-color: #ff0a0b;
-   padding-bottom: 15rem;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   position: relative;
+   transform: scaleY(1.09);
 }
 
 .set-border{
@@ -264,6 +496,15 @@ p{
   
 }
 
+.icon-right{
+  transition: transform 0.3s ease;
+}
+
+.btn:hover icon-right{
+  transform: translateX(5px);
+  transition: transform 0.3s ease-in-out;
+}
+
 .setting-color{
   font-family: "Maison Neue Mono", monospace;
   letter-spacing: 1.9px;
@@ -282,6 +523,7 @@ p{
   transform: translateY(50px); /* Adjust based on desired effect */
   opacity: 0;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  overflow-y: hidden;
 }
 
 /* State when in view */
@@ -314,18 +556,7 @@ p{
   .col-lg-4 {
     display: none;
   }
-  /* .col-md-6 {
-    display: none;
-  } */
-  /* .col-md-6:first-of-type,
-.col-md-6:last-of-type {
-    display: none;
-  } */
   
-  
- /* .col-md-6:nth-of-type(2) {
-    display: block;
-  }  */
 
   .border-start {
     border-left: 0;
@@ -394,14 +625,21 @@ p{
 
 .accordion-button{
   font-family: 'Maison Neue Medium', sans-serif;
-  font-size: 3.5rem !important;
+  border-top: 1px solid white;
+  line-height: 4px;
+  /* font-size: 3.5rem !important; */
 }
 
+.accordion-button::after {
+  content: none; 
+  /* margin-left: 10px; */
+}
 
 .accordion-body{
   font-family: 'Maison Neue Book', sans-serif;
   color: #b2b2b2;
   border-top: 1px solid white;
+  border-bottom: 1px solid white;
   padding-top: 2rem;
 }
 
@@ -409,7 +647,6 @@ p{
   content: "";
   display: block;
   margin-top: 16px;
-  border-bottom: 1px solid white;
   padding: 3px;
 }
 
@@ -458,6 +695,15 @@ p{
   font-family: "Maison Neue Bold", sans-serif;
   letter-spacing: 0.9px;
   transition: all .1s linear;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-secondary-set i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-secondary-set:hover i {
+  transform: translateX(5px);
 }
 
 .process-setting{
@@ -475,12 +721,23 @@ p{
   font-size: 0.75rem;
   font-family: "Maison Neue Bold", sans-serif;
   letter-spacing: 0.9px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.btn-success-set:hover {
+.btn-success-set:hover{
   background-color: #ff0a0b;
   transition: all .1s linear;
 }
+
+.btn-success-set i {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.btn-success-set:hover i {
+  transform: translateX(5px);
+}
+
 
 /* side text work */
 .side-text{
@@ -561,36 +818,57 @@ p{
     padding-right: 0 !important;
 }
 
-.col-md-4 {
+.multilple-text {
     width: 100% !important;
     padding-top: 8rem;
 }
 
 .setting-border{
   border-top: 2px solid gray;
-  margin: 1rem;
+  width: 95%;
+  
 }
 
+.setting-padding{
+  padding: 0 !important;
+  margin-top: 10px;
+}
+
+.set-all-padding{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 .image-border{
   margin-bottom: 3rem !important;
   margin-top: 3rem;
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid gray;
+  
+}
+
+.text-start {
+  display: flex;
+  gap: 20px;
 }
 
 .text-start img {
-    width: 40%;
+    width: 200px;
+    height: 200px;
+    
 }
 
 
 .side-text {
-    font-size: 3.2rem !important;
-    margin-top: 0;
+    font-size: 1.8rem !important;
+    margin-top: 0 !important;
     border-bottom: none;
 }
 
 .core {
-  font-size: 1.8rem; 
-  margin-top: 4rem;
+  font-size: 1.2rem; 
+  margin-top: 2rem;
   display: block;
 }
 
@@ -602,10 +880,6 @@ p{
     padding-top: 1.25rem;
 }
 
-.blend {
-    width: 100%;
-    height: auto;
-}
 
 }
 
@@ -653,18 +927,45 @@ p{
   }
 
   .btn-primary-setting{
-    font-size: 1.75rem;
+    font-size: 0.625rem;
+    letter-spacing: 2px;
     font-weight: normal !important;
     padding: 1.25 !important;
+    
   }
+
 
   .setting-image img {
     margin: 0 auto;
   }
 }
 
+.btn-primary-setting{
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary-setting i {
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.btn-primary-setting:hover i {
+transform: translateX(5px) !important; /* Adjust the value to move the icon as desired */
+}
 
 
+
+
+@media (max-width: 992px) {
+  .btn-primary-setting{
+    font-size: 1.075rem;
+    letter-spacing: 2px;
+  }
+
+  .responsive-container{
+    max-width: 100% !important;
+    padding: 0 15px;
+  }
+}
 
 
 
@@ -699,8 +1000,15 @@ p{
   font-family: "Maison Neue Bold", sans-serif;
   letter-spacing: 0.9px;
   font-size: 0.8rem;
+
   
 }
+
+.btn:hover .btn-icon {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
+
 
 .glide__slide {
   display: flex;
@@ -770,17 +1078,35 @@ p{
 .mt-11{
   margin-top: 7rem;
 }
-.form-control {
+.form-control-set {
   border: none;
   border-bottom: 1px solid #d2d2d2;
   font-family: 'Maison Neue Book', sans-serif;
   border-radius: 0;
   background: transparent;
+  line-height: 3;
+  box-sizing: border-box;
+  font-size: 1.3rem;
 }
 
-.form-control::placeholder {
+.form-control-set::placeholder {
   color: #6c757d;
+  text-align: left;
 }
+
+
+.form-control-setting {
+  border: none;
+  font-family: 'Maison Neue Book', sans-serif;
+  border-radius: 0;
+  background: transparent;
+  line-height: 3;
+  font-size: 1.3rem;
+  resize: none;
+}
+
+
+
 .btn-custom {
   font-family: "Maison Neue Bold", sans-serif;
   background-color: #ff0a0b !important;
@@ -790,15 +1116,23 @@ p{
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 .btn-custom i {
   margin-left: 5px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease-in-out;
 }
+
+.btn-custom:hover i {
+  transform: translateX(5px);
+}
+
+
 .form-check-label {
   text-transform: uppercase;
   font-family: "Maison Neue Bold", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   letter-spacing: 1.2px;
 }
 .form-label{
@@ -835,7 +1169,29 @@ p{
     margin-top: 3rem;
 
   }
+
+ .form-name{
+  display: block !important;
+  line-height: 6;
+
+ }
+  .form-control-set{
+    width: 100%;
+  }
+
+  .form-control-set::placeholder {
+    font-size: 1.8rem;
+  }
+  .form-control-setting::placeholder {
+    font-size: 1.8rem;
+  }
+  .form-section{
+    padding: 2rem;
+  }
 }
+
+
+
 
 @media (max-width: 767.98px) {
   .image-section {
@@ -846,6 +1202,7 @@ p{
     padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    
   }
   
   .set-the-font {
@@ -855,20 +1212,36 @@ p{
   .mt-11 {
     margin-top: 3rem;
   }
+
+  .full-width-sm {
+    width: 100%;
+    margin-bottom: 1rem; /* Optional: adds spacing between fields */
+  }
+
+
 }
+
+
+
+
+
 
 /* footer section */
 
 .modern-section{
   background-color: #000000;
+  padding-bottom: 8rem;
+  padding-top: 1rem;
+  padding-left: 1.4rem;
 }
 
 .footer-paragraph{
   font-family: 'FlechaS-Medium', sans-serif;
+  line-height: 1.08;
 }
 
 .set-font-size{
-  font-size: 0.8rem;
+  /* font-size: 1.8rem; */
   letter-spacing: 0.9px;
   margin-top: 2rem;
 }
@@ -887,7 +1260,27 @@ p{
 
 @media (max-width: 992px) {
 
-  .footer-column + .footer-column {
-    margin-top: 1rem;
+  .set-of-padding{
+    text-wrap: nowrap;
+    width: 100%;
   }
+
+  .responsive-font li{
+    font-size: 2rem !important;
+  }
+
+  .media-setting{
+    font-size: 1.3rem;
+  }
+
+  .main-footer {
+    order: 2;
+  }
+
+  .main-footer ~ div {
+    order: 1;
+    text-align: right;
+  }
+
+
 }

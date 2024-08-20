@@ -1,321 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<head>
+  <meta charset="UTF-8" />
 
-    <link
-      rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
-    />
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-    <link
-      rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Home — NOBL</title>
-    <link
-      rel="icon"
-      href="images/favicon.ico"
-      sizes="16x16"
-      type="image/x-icon"
-    />
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
-  <body>
-   
-    <nav id="navbar" class="navbar navbar-expand-lg background">
-      <div class="container-fluid">
-        <div class="d-lg-none d-flex align-items-center gap-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="33.908"
-            viewBox="0 0 100 33.908"
-          >
+  <link rel="stylesheet" href="style.css" />
+  <title>Home — NOBL</title>
+  <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/x-icon" />
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg background">
+    <div class="container-fluid set-padding">
+      <div class="d-lg-none d-flex align-items-center gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="63.908" viewBox="0 0 100 33.908">
+          <path
+            d="M57.876,0A10.967,10.967,0,0,0,46.893,10.919V22.988a10.983,10.983,0,0,0,21.965,0V10.919A10.967,10.967,0,0,0,57.876,0Zm4.929,22.892a4.881,4.881,0,0,1-9.762,0V11a4.881,4.881,0,0,1,9.762,0Z"
+            transform="translate(-18.473)"></path>
+          <path
+            d="M22.286,4.061V30.594a3.131,3.131,0,0,1-6.262,0V18.8L6.262,10.7V30.594a3.131,3.131,0,0,1-6.262,0V4.061A3.14,3.14,0,0,1,3.147.948a3.088,3.088,0,0,1,2.216.926l10.661,8.844V4.061a3.131,3.131,0,0,1,6.262,0Z"
+            transform="translate(0 -0.374)"></path>
+          <path
+            d="M109.474,16.662a8.72,8.72,0,0,0,3.628-7.1A8.566,8.566,0,0,0,104.608.922H96.387a3.14,3.14,0,0,0-3.131,3.129V30.583A3.149,3.149,0,0,0,96.484,33.7h8.124a9.33,9.33,0,0,0,4.849-17.034ZM99.519,7.132h4.014a3.257,3.257,0,1,1,0,6.513H99.519V7.132Zm3.885,20.4H99.551V24.085a3.258,3.258,0,0,1-.016-.4c0-.128,0-.271.016-.463V19.839H103.4a3.847,3.847,0,1,1,0,7.695Z"
+            transform="translate(-36.737 -0.363)"></path>
+          <path
+            d="M153.969,30.636a3.109,3.109,0,0,1-3.115,3.1H140.128a3.109,3.109,0,0,1-3.115-3.1V23.995a3.019,3.019,0,0,1,.915-2.187l4.432-4.454L137.912,12.9A3.046,3.046,0,0,1,137,10.713V4.072a3.115,3.115,0,0,1,6.23,0V9.436l5.764,5.731a3.071,3.071,0,0,1,0,4.374l-5.764,5.731v2.219h7.611a3.129,3.129,0,0,1,3.115,3.145Z"
+            transform="translate(-53.969 -0.384)"></path>
+        </svg>
+      </div>
+      <div class="d-lg-none d-flex align-items-center justify-content-end gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40.707" height="40.707" viewBox="0 0 18.707 18.707">
+          <g transform="translate(-1802 -38)">
+            <g transform="translate(1802 38)" fill="none" stroke="#000" stroke-width="2">
+              <circle cx="8" cy="8" r="8" stroke="none"></circle>
+              <circle cx="8" cy="8" r="7" fill="none"></circle>
+            </g>
+            <line x2="5" y2="4" transform="translate(1815 51)" fill="none" stroke="#000" stroke-width="2"></line>
+          </g>
+        </svg>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="width: 3rem; "></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-4 text-uppercase">
+            <a class="nav-set text-black fw-bold" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop-1" aria-controls="offcanvasTop" href="#">capabilities</a>
+          </li>
+          <li class="nav-item px-4 text-uppercase">
+            <a class="nav-set text-black fw-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop-2" aria-controls="offcanvasTop" href="#">methodology</a>
+          </li>
+          <li class="nav-item px-4 text-uppercase">
+            <a class="nav-set text-black fw-bold" href="#">about nobl</a>
+          </li>
+        </ul>
+        <div class="set-svg d-none d-lg-flex align-items-center my-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="33.908" viewBox="0 0 100 33.908">
             <path
               d="M57.876,0A10.967,10.967,0,0,0,46.893,10.919V22.988a10.983,10.983,0,0,0,21.965,0V10.919A10.967,10.967,0,0,0,57.876,0Zm4.929,22.892a4.881,4.881,0,0,1-9.762,0V11a4.881,4.881,0,0,1,9.762,0Z"
-              transform="translate(-18.473)"
-            ></path>
+              transform="translate(-18.473)"></path>
             <path
               d="M22.286,4.061V30.594a3.131,3.131,0,0,1-6.262,0V18.8L6.262,10.7V30.594a3.131,3.131,0,0,1-6.262,0V4.061A3.14,3.14,0,0,1,3.147.948a3.088,3.088,0,0,1,2.216.926l10.661,8.844V4.061a3.131,3.131,0,0,1,6.262,0Z"
-              transform="translate(0 -0.374)"
-            ></path>
+              transform="translate(0 -0.374)"></path>
             <path
               d="M109.474,16.662a8.72,8.72,0,0,0,3.628-7.1A8.566,8.566,0,0,0,104.608.922H96.387a3.14,3.14,0,0,0-3.131,3.129V30.583A3.149,3.149,0,0,0,96.484,33.7h8.124a9.33,9.33,0,0,0,4.849-17.034ZM99.519,7.132h4.014a3.257,3.257,0,1,1,0,6.513H99.519V7.132Zm3.885,20.4H99.551V24.085a3.258,3.258,0,0,1-.016-.4c0-.128,0-.271.016-.463V19.839H103.4a3.847,3.847,0,1,1,0,7.695Z"
-              transform="translate(-36.737 -0.363)"
-            ></path>
+              transform="translate(-36.737 -0.363)"></path>
             <path
               d="M153.969,30.636a3.109,3.109,0,0,1-3.115,3.1H140.128a3.109,3.109,0,0,1-3.115-3.1V23.995a3.019,3.019,0,0,1,.915-2.187l4.432-4.454L137.912,12.9A3.046,3.046,0,0,1,137,10.713V4.072a3.115,3.115,0,0,1,6.23,0V9.436l5.764,5.731a3.071,3.071,0,0,1,0,4.374l-5.764,5.731v2.219h7.611a3.129,3.129,0,0,1,3.115,3.145Z"
-              transform="translate(-53.969 -0.384)"
-            ></path>
+              transform="translate(-53.969 -0.384)"></path>
           </svg>
         </div>
-        <div
-          class="d-lg-none d-flex align-items-center justify-content-end gap-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18.707"
-            height="18.707"
-            viewBox="0 0 18.707 18.707"
-          >
-            <g transform="translate(-1802 -38)">
-              <g
-                transform="translate(1802 38)"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              >
-                <circle cx="8" cy="8" r="8" stroke="none"></circle>
-                <circle cx="8" cy="8" r="7" fill="none"></circle>
-              </g>
-              <line
-                x2="5"
-                y2="4"
-                transform="translate(1815 51)"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              ></line>
-            </g>
-          </svg>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasMenu"
-            aria-controls="offcanvasMenu"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item px-4 text-uppercase">
-              <a
-                class="nav-set text-black fw-bold active"
-                aria-current="page"
-                href="#"
-                >capabilities</a
-              >
-            </li>
-            <li class="nav-item px-4 text-uppercase">
-              <a class="nav-set text-black fw-bold" href="#">methodology</a>
-            </li>
-            <li class="nav-item px-4 text-uppercase">
-              <a class="nav-set text-black fw-bold" href="#">about nobl</a>
-            </li>
-          </ul>
-          <div class="set-svg d-none d-lg-flex align-items-center my-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="33.908"
-              viewBox="0 0 100 33.908"
-            >
-              <path
-                d="M57.876,0A10.967,10.967,0,0,0,46.893,10.919V22.988a10.983,10.983,0,0,0,21.965,0V10.919A10.967,10.967,0,0,0,57.876,0Zm4.929,22.892a4.881,4.881,0,0,1-9.762,0V11a4.881,4.881,0,0,1,9.762,0Z"
-                transform="translate(-18.473)"
-              ></path>
-              <path
-                d="M22.286,4.061V30.594a3.131,3.131,0,0,1-6.262,0V18.8L6.262,10.7V30.594a3.131,3.131,0,0,1-6.262,0V4.061A3.14,3.14,0,0,1,3.147.948a3.088,3.088,0,0,1,2.216.926l10.661,8.844V4.061a3.131,3.131,0,0,1,6.262,0Z"
-                transform="translate(0 -0.374)"
-              ></path>
-              <path
-                d="M109.474,16.662a8.72,8.72,0,0,0,3.628-7.1A8.566,8.566,0,0,0,104.608.922H96.387a3.14,3.14,0,0,0-3.131,3.129V30.583A3.149,3.149,0,0,0,96.484,33.7h8.124a9.33,9.33,0,0,0,4.849-17.034ZM99.519,7.132h4.014a3.257,3.257,0,1,1,0,6.513H99.519V7.132Zm3.885,20.4H99.551V24.085a3.258,3.258,0,0,1-.016-.4c0-.128,0-.271.016-.463V19.839H103.4a3.847,3.847,0,1,1,0,7.695Z"
-                transform="translate(-36.737 -0.363)"
-              ></path>
-              <path
-                d="M153.969,30.636a3.109,3.109,0,0,1-3.115,3.1H140.128a3.109,3.109,0,0,1-3.115-3.1V23.995a3.019,3.019,0,0,1,.915-2.187l4.432-4.454L137.912,12.9A3.046,3.046,0,0,1,137,10.713V4.072a3.115,3.115,0,0,1,6.23,0V9.436l5.764,5.731a3.071,3.071,0,0,1,0,4.374l-5.764,5.731v2.219h7.611a3.129,3.129,0,0,1,3.115,3.145Z"
-                transform="translate(-53.969 -0.384)"
-              ></path>
-            </svg>
-          </div>
-
-          <div class="right-content ms-auto d-none d-lg-flex">
-            <span class="text-uppercase text-black fw-bold"
-              >today's changemaker</span
-            >
-            <span class="pipe">|</span>
-            <div class="d-flex align-items-center justify-content-center py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18.707"
-                height="18.707"
-                viewBox="0 0 18.707 18.707"
-              >
-                <g transform="translate(-1802 -38)">
-                  <g
-                    transform="translate(1802 38)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-width="2"
-                  >
-                    <circle cx="8" cy="8" r="8" stroke="none"></circle>
-                    <circle cx="8" cy="8" r="7" fill="none"></circle>
-                  </g>
-                  <line
-                    x2="5"
-                    y2="4"
-                    transform="translate(1815 51)"
-                    fill="none"
-                    stroke="#000"
-                    stroke-width="2"
-                  ></line>
+        <div class="right-content ms-auto d-none d-lg-flex">
+          <span class="text-uppercase text-black fw-bold">today's changemaker</span>
+          <span class="pipe">|</span>
+          <div class="d-flex align-items-center justify-content-center py-4" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18.707" height="18.707" viewBox="0 0 18.707 18.707">
+              <g transform="translate(-1802 -38)">
+                <g transform="translate(1802 38)" fill="none" stroke="#000" stroke-width="2">
+                  <circle cx="8" cy="8" r="8" stroke="none"></circle>
+                  <circle cx="8" cy="8" r="7" fill="none"></circle>
                 </g>
-              </svg>
-            </div>
+                <line x2="5" y2="4" transform="translate(1815 51)" fill="none" stroke="#000" stroke-width="2"></line>
+              </g>
+            </svg>
+
           </div>
+
         </div>
-      </div>
-    </nav>
 
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasMenu"
-      aria-labelledby="offcanvasMenuLabel"
-    >
-      <div class="offcanvas-header">
-        <h5
-          class="offcanvas-title text-black text-uppercase"
-          id="offcanvasMenuLabel"
-        >
-          Menu
-        </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="border-bottom border-secondary border-opacity-50"></div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link fs-2" href="#">Capabilities</a>
-          </li>
-          <div
-            class="border-bottom border-secondary border-opacity-50 mt-3"
-          ></div>
-          <li class="nav-item py-2">
-            <a class="nav-link fs-2" href="#">Methodology</a>
-          </li>
-          <div
-            class="border-bottom border-secondary border-opacity-50 mt-3"
-          ></div>
-          <li class="nav-item py-2">
-            <a class="nav-link fs-2" href="#">Today's Changemaker</a>
-          </li>
-          <div
-            class="border-bottom border-secondary border-opacity-50 mt-3"
-          ></div>
+        <div class="topnav" style="margin-left: -59px;">
+          <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+          <a href="#" class="icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuDesktop"
+            aria-controls="offcanvasMenuDesktop">
+            <img src="images/bar.png" style="width: 40px; margin-right: 50px;" alt="">
+          </a>
+          <a href="#" class="icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuMobile"
+            aria-controls="offcanvasMenuMobile">
+          </a>
 
-          <footer class="mt-13">
-            <div
-              class="border-bottom border-black border-opacity-50 mb-4"
-            ></div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About NOBL</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Privacy Policy</a>
-              </li>
-            </ul>
-            <div
-              class="svg-container bg-secondary rounded-circle d-inline-block mt-5 p-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="23"
-                viewBox="0 0 24 23"
-              >
-                <path
-                  d="M4.98,3.5A2.48,2.48,0,1,1,2.5,1,2.49,2.49,0,0,1,4.98,3.5ZM5,8H0V24H5Zm7.982,0H8.014V24h4.969V15.6c0-4.67,6.029-5.052,6.029,0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8Z"
-                  transform="translate(0 -1)"
-                  fill="#fff"
-                ></path>
-              </svg>
-            </div>
-          </footer>
-        </ul>
+        </div>
+
       </div>
     </div>
+  </nav>
 
-    <!-- Main Content -->
-    <div  data-scroll-container>
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop-1" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="content-box">
+              <h1 class="set-content-font">We serve leaders who <br> can't wait to change. </h1>
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <button type="button"
+                  class="btn btn-danger-setting rounded-pill px-3 py-3 text-white text-uppercase d-flex align-items-center justify-content-center gap-2"
+                  data-bs-dismiss="offcanvas" aria-label="Close">see all capabilities <img src="images/icons8-greater-than-16.png" class="icon-white" width="16"
+                    height="16" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 border-start border-secondary border-opacity-50 px-5">
+            <div class="content-box">
+              <ul class="list-unstyled">
+                <h4 class="text-uppercase set-content-font">stratgey execution</h4>
+                <li><p class="mt-2 text-secondary">Turn strategic planning into strategic doing.</p></li>
+
+                <h4 class="text-uppercase set-content-font mt-5">culture change</h4>
+                <li><p class="mt-2 text-secondary">Align how you work with how to win your market.</p></li>
+
+                <h4 class="text-uppercase set-content-font mt-5">mergers & acquistions</h4>
+                <li><p class="mt-2 text-secondary">Unite teams to deliver the value promised, together.</p></li>
+              </ul>
+              
+            </div>
+          </div>
+          <div class="col-4 border-start border-secondary border-opacity-50 px-5">
+            <div class="content-box">
+              <ul class="list-unstyled">
+                <h4 class="text-uppercase set-content-font">digital transformation</h4>
+                <li><p class="mt-2 text-secondary">Harness the power of technology and new ways of working.</p></li>
+
+                <h4 class="text-uppercase set-content-font mt-5">scaling innovation</h4>
+                <li><p class="mt-2 text-secondary">Break through Organizational inertia to bring ideas to market.</p></li>
+
+                <h4 class="text-uppercase set-content-font mt-5">hypergrowth</h4>
+                <li><p class="mt-2 text-secondary">Refocus and optimize after rapid growth.</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop-2" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="content-box">
+              <h1 class="set-content-font">A change model made for <br> modren organizations. </h1>
+              <div class="d-flex align-items-center gap-2 mt-4">
+                <button type="button"
+                  class="btn btn-danger-setting rounded-pill px-3 py-3 text-white text-uppercase d-flex align-items-center justify-content-center gap-2 "
+                  data-bs-dismiss="offcanvas" aria-label="Close">explore our methodology <img src="images/icons8-greater-than-16.png" class="icon-white" width="16"
+                    height="16" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 border-start border-secondary border-opacity-50 px-5">
+            <div class="content-box">
+              <ul class="list-unstyled">
+                <h4 class="text-uppercase set-content-font">our process</h4>
+                <li><p class="mt-2 text-secondary">Explore what we do in each of our four phases, and how we build the capacity and momentum for lasting change.</p></li>
+
+                <h4 class="text-uppercase set-content-font mt-5">how we're different</h4>
+                <li><p class="mt-2 text-secondary">See how we compare to other popular change management methods like Kotter and Prosci, and if we're truly the right fit for your goals.</p></li>
+
+              </ul>
+              
+            </div>
+          </div>
+          <div class="col-4 border-start border-secondary border-opacity-50 px-5">
+            <div class="content-box">
+              <ul class="list-unstyled">
+                <h4 class="text-uppercase set-content-font">measuring impact</h4>
+                <li><p class="mt-2 text-secondary">Find out how we track progress and demonstrate the value of making change.</p></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header px-5 my-3">
+      <h5 class="offcanvas-title text-uppercase text-black" id="offcanvasTopLabel">Search nobl</h5>
+      <div class="d-flex align-items-center justify-content-center gap-2 ms-auto">
+        <button type="button"
+          class="btn btn-danger-set set-button rounded-pill px-3 py-2 text-white text-uppercase d-flex align-items-center justify-content-center gap-2 "
+          data-bs-dismiss="offcanvas" aria-label="Close"><span class="text-content">Close </span><img src="images/icons8-cross-24.png" width="16"
+            height="16" alt=""></button>
+      </div>
+    </div>
+    <div class="container border-bottom border-black" style="max-width: 94vw;"></div>
+    <div class="row">
+      <div class="col-8">
+        <div class="offcanvas-body">  
+          <input type="text" id="input-box" class="px-4 display-1 text-secondary fw-bold" placeholder="Search for topics...">
+        </div>
+        <div class="d-flex align-items-center px-5 mt-20">
+          <button
+            class="btn btn-search px-3 py-2 text-uppercase text-white rounded-pill d-flex align-items-center justify-content-center gap-2">search
+            <img src="images/search.png" width="16" height="16" alt=""></button>
+        </div>
+      </div>
+      <div class="col-4 border-start border-black mt-3" style="max-height: 66vh;">
+        <div class="data my-5 px-3">
+          <h4 class="fs-5 set-search text-uppercase">popular search terms:</h4>
+          <ul class="list-unstyled mt-4 lh-lg">
+            <li class="fs-5 set-list-color">Strategic planning</li>
+            <li class="fs-5 set-list-color">Organizational change</li>
+            <li class="fs-5 set-list-color">Office culture</li>
+            <li class="fs-5 set-list-color">Remote working</li>
+            <li class="fs-5 set-list-color">Team building</li>
+    
+          </ul>
+          <div class="border-bottom border-black" style="max-width: 29vw;"></div>
+
+          <ul class="list-unstyled d-flex align-items-start gap-4 mt-5">
+            <li class="text-uppercase set-text-red-color border border-2 rounded-3 px-2 py-1">about nobl</li>
+            <li class="text-uppercase set-text-red-color border border-2 rounded-3 px-2 py-1">capabilities</li>
+            <li class="text-uppercase set-text-red-color border border-2 rounded-3 px-2 py-1">methodology</li>
+            <li class="text-uppercase set-text-red-color border border-2 rounded-3 px-2 py-1">careers</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+   
+  </div>
+
+
+  <!-- desktop offcanvas -->
+
+
+
+  <div class="offcanvas canvas-setup offcanvas-color offcanvas-end px-4" tabindex="-1" id="offcanvasMenuDesktop"
+    aria-labelledby="offcanvasMenuLabelDesktop">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-white text-uppercase" id="offcanvasMenuLabelDesktop">
+        Menu
+      </h5>
+
+      <div class="d-flex align-items-center justify-content-center gap-2 ms-auto">
+        <button type="button"
+          class="btn btn-danger-set rounded-pill px-3 py-2 text-white text-uppercase d-flex align-items-center justify-content-center gap-2 "
+          data-bs-dismiss="offcanvas" aria-label="Close"><span class="text-content">Close </span> <img src="images/icons8-cross-24.png" width="16"
+            height="16" alt=""></button>
+      </div>
+
+    </div>
+    <div class="set-border border-bottom border-black"></div>
+
+    <div class="offcanvas-body">
+      <ul class="navbar-nav text-white">
+        <li class="nav-item">
+          <a class="nav-link fs-15" href="#">Capabilities</a>
+        </li>
+        <div class="border-bottom border-black mt-3"></div>
+        <li class="nav-item py-2">
+          <a class="nav-link fs-15" href="#">Methodology</a>
+        </li>
+        <div class="border-bottom border-black mt-3"></div>
+        <li class="nav-item py-2">
+          <a class="nav-link fs-15" href="#">Today's Changemaker</a>
+        </li>
+
+        <footer class="mt-3">
+          <div class="border-bottom border-black mb-4"></div>
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4 list-setting" href="#">About NOBL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4 list-setting" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4 list-setting" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4 list-setting" href="#">Subscribe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4 list-setting" href="#">Privacy Policy</a>
+            </li> 
+          </ul>
+
+          <div class=" svg-container rounded-circle d-inline-block mt-5 p-3" style="background-color: #00000033;">
+            <svg class="d-flex align-items-center" xmlns="http://www.w3.org/2000/svg" width="24" height="23"
+              viewBox="0 0 24 23">
+              <path
+                d="M4.98,3.5A2.48,2.48,0,1,1,2.5,1,2.49,2.49,0,0,1,4.98,3.5ZM5,8H0V24H5Zm7.982,0H8.014V24h4.969V15.6c0-4.67,6.029-5.052,6.029,0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8Z"
+                transform="translate(0 -1)" fill="#fff"></path>
+            </svg>
+          </div>
+        </footer>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- responsive offcanvas -->
+
+
+
+  <div class="offcanvas custom-canvas offcanvas-end px-4 py-4 mb-3" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header-sides">
+      <h5 class="offcanvas-title text-black text-uppercase px-3 mt-3 fs-4" id="offcanvasMenuLabel">
+        Menu
+      </h5>
+      <div class="d-flex align-items-center justify-content-center gap-2">
+        <button type="button"
+          class="btn btn-setting rounded-pill border-secondary px-4 py-3 text-black text-uppercase d-flex align-items-center justify-content-center gap-2 "
+          data-bs-dismiss="offcanvas" aria-label="Close">Close <img src="images/icons8-cross-24.png" class="icon-black" width="22"
+            height="22" alt=""></button>
+      </div>
+    </div>
+    <div class="border-bottom mt-5 border-secondary border-opacity-50"></div>
+    <div class="offcanvas-body-start">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Capabilities</a>
+        </li>
+        <div class="border-bottom border-secondary border-opacity-50 mt-3"></div>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Methodology</a>
+        </li>
+        <div class="border-bottom border-secondary border-opacity-50 mt-3"></div>
+        <li class="nav-item py-2">
+          <a class="nav-link" href="#">Today's Changemaker</a>
+        </li>
+        <div class="border-bottom border-secondary border-opacity-50 mt-3"></div>
+
+        <footer class="mt-13">
+          <div class="border-bottom border-black border-opacity-50 mb-4"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About NOBL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscribe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="svg-container bg-secondary opacity-50 rounded-circle d-inline-block mt-5 p-3">
+            <svg class="d-flex align-items-center" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+              <path
+                d="M4.98,3.5A2.48,2.48,0,1,1,2.5,1,2.49,2.49,0,0,1,4.98,3.5ZM5,8H0V24H5Zm7.982,0H8.014V24h4.969V15.6c0-4.67,6.029-5.052,6.029,0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8Z"
+                transform="translate(0 -1)" fill="#fff"></path>
+            </svg>
+          </div>
+        </footer>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <!-- Main Content -->
+  <div data-scroll-container data-scroll-speed="10">
     <main class="set-background">
-      <section class="container text-center" data-scroll>
-        <h1 class="fs-10 text-black fw-bold">
+      <section class="container text-center">
+        <h1 class="fs-10 text-black fw-bold text-focus-in">
           Bold ambitions demand collaboration.
         </h1>
-        <p class="fs-4 fw-normal set-color reduce-space">
+        
+        <p class="fs-4 fw-normal d-inline-block set-color reduce-space set-font-color">
           But truly working in sync takes effort.
         </p>
+     
 
         <div class="d-flex flex-column align-items-center">
           <div class="goal-circle"></div>
           <div class="separator"></div>
           <div class="rounded-circle overflow-hidden set-frame">
-            <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" src="images/Hero_01_SMALL.webp" class="set-img" alt="" />
+            <img src="images/Hero_01_SMALL.webp" class="set-img" alt="" />
           </div>
           <div class="separator"></div>
           <div class="goal-circle"></div>
         </div>
 
-        <h1 class="fs-11 text-black fw-bold">
+        <h1 class="fs-11 text-black fw-bold text-focus-in">
           Most consultants deliver plans, not progress.
         </h1>
-        <p class="fs-4 fw-normal set-color reduce-space">
+        <p class="fs-4 fw-normal d-inline-block set-color reduce-space set-font-color">
           Big Consulting seems to bill by the slide.
         </p>
 
@@ -323,18 +453,19 @@
           <div class="goal-circle"></div>
           <div class="separator"></div>
           <div class="rounded-circle overflow-hidden set-frame">
-            <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="3" src="images/Hero_02_SMALL.webp" class="set-img" alt="" />
+            <img src="images/Hero_02_SMALL.webp" class="set-img" alt="" />
           </div>
           <div class="separator"></div>
           <div class="goal-circle"></div>
         </div>
+        <div></div>
 
-        <h1 class="fs-11 text-black fw-bold">
+        <h1 class="fs-11 text-black fw-bold text-focus-in set-paragraph">
           You deserve a <br />
           partner that leans <br />
           into the challenge.
         </h1>
-        <p class="fs-4 fw-normal set-color reduce-space">
+        <p class="fs-4 fw-normal d-inline-block set-color reduce-space set-font-color">
           Helping your people overcome barriers to <br />
           perform at their best.
         </p>
@@ -343,17 +474,17 @@
           <div class="goal-circle"></div>
           <div class="separator"></div>
           <div class="rounded-circle overflow-hidden set-frame">
-            <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" src="images/Hero_03_SMALL.webp" class="set-img" alt="" />
+            <img src="images/Hero_03_SMALL.webp" class="set-img" alt="" />
           </div>
           <div class="separator"></div>
           <div class="goal-circle"></div>
         </div>
       </section>
     </main>
-  
+
 
     <!-- Red section -->
-    
+
     <section class="section-red">
       <div class="container-fluid px-5 text-center">
         <h1 class="fs-11 text-white fw-bold">
@@ -366,15 +497,10 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div
-              class="col-lg-4 col-md-6 border-start border-black image-rotation-container"
-            >
+            <div class="col-lg-4 col-md-6 border-start border-black image-rotation-container">
               <div class="container-fluid">
                 <div class="row mb-4">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                    style="height: 320px"
-                  >
+                  <div class="d-flex align-items-center justify-content-center" style="height: 320px">
                     <img src="images/yt.png" class="w-50 active" alt="" />
                     <img src="images/discovery.svg" class="w-50" alt="" />
                     <img src="images/vg.svg" class="w-50" alt="" />
@@ -388,13 +514,10 @@
                 </div>
               </div>
 
-              <div class="containter-fluid">
+              <div class="container-fluid">
                 <div class="row mb-4">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                    style="height: 320px"
-                  >
-                    <img src="images/jj.png" class="w-50" alt="" />
+                  <div class="d-flex align-items-center justify-content-center" style="height: 320px">
+                    <img src="images/jj.png" class="w-50 active" alt="" />
                     <img src="images/den.svg" class="w-50" alt="" />
                     <img src="images/dex.svg" class="w-50" alt="" />
                     <img src="images/ff.svg" class="w-50" alt="" />
@@ -408,11 +531,8 @@
 
               <div class="container-fluid">
                 <div class="row">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                    style="height: 320px"
-                  >
-                    <img src="images/nk.png" class="w-50" alt="" />
+                  <div class="d-flex align-items-center justify-content-center" style="height: 320px">
+                    <img src="images/nk.png" class="w-50 active" alt="" />
                     <img src="images/den.svg" class="w-50" alt="" />
                     <img src="images/dex.svg" class="w-50" alt="" />
                     <img src="images/ff.svg" class="w-50" alt="" />
@@ -426,32 +546,30 @@
 
 
             
-            <div
-              class="d-sm-none d-lg-block col-lg-4 col-md-6 border-start border-black border-end animate-up" 
-            >
-            <div data-scroll data-scroll-direction="vertical" data-scroll-speed="-9">
+            <div class="d-sm-none d-lg-block col-lg-4 col-md-6 border-start border-black border-end animate-up">
+              <div data-scroll data-scroll-direction="vertical" data-scroll-speed="-9">
 
-              <div class="d-flex flex-column justify-content-between mt-5" >
-                <p class="text-uppercase fs-5 text-black setting">GET READY</p>
-                <h4 class="text-white fs-13">
-                  Impossible is <br />
-                  Temporary
-                </h4>
-                <p class="text-white fs-4 mt-3">
-                  Prepare to astound yourselves.
-                </p>
-              </div>
-              <div
-                class="d-flex align-items-center justify-content-center gap-5" 
-              >
-                <button
-                  class="d-flex align-items-center justify-content-center gap-3 btn btn-primary-set rounded-pill text-uppercase border-0 fw-bold px-4 py-3 mt-4"
-                >
-                  learn more about us <i class="fa-solid fa-greater-than"></i>
-                </button>
+                <div class="d-flex flex-column justify-content-between mt-5">
+                  <p class="text-uppercase fs-5 text-black setting">GET READY</p>
+                  <h4 class="text-white fs-13">
+                    Impossible is <br />
+                    Temporary
+                  </h4>
+                  <p class="text-white fs-4 mt-3">
+                    Prepare to astound yourselves.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-5">
+                  <button
+                    class="d-flex align-items-center justify-content-center gap-3 btn btn-primary-set rounded-pill text-uppercase border-0 fw-bold px-4 py-3 mt-4">
+                    learn more about us <i class="fa-solid fa-greater-than icon-right"></i>
+                  </button>
+                </div>
               </div>
             </div>
-            </div>
+
+
+            <!-- responsive -->
 
             <div class="col-12 d-lg-none border-black border-bottom">
               <div class="d-flex flex-column justify-content-between mt-5">
@@ -463,21 +581,15 @@
                   Prepare to astound yourselves.
                 </p>
               </div>
-              <div
-                class="d-flex align-items-center justify-content-center gap-5 mb-5"
-              >
+              <div class="d-flex align-items-center justify-content-center gap-5 mb-5">
                 <button
-                  class="d-flex align-items-center justify-content-center gap-3 btn btn-primary-set rounded-pill text-uppercase border-0 fw-bold px-5 py-4 fs-4 mt-5"
-                >
-                  learn more about us <i class="fa-solid fa-greater-than"></i>
+                  class="d-flex align-items-center justify-content-center gap-3 btn btn-primary-set rounded-pill text-uppercase border-0 fw-bold px-5 py-4 fs-4 mt-5">
+                  learn more about us <i class="fa-solid fa-greater-than icon-right"></i>
                 </button>
               </div>
             </div>
-            <div
-              id="image-container"
-              class="d-flex align-items-center d-lg-none justify-content-center mt-4"
-              style="height: 320px"
-            >
+            <div id="image-container" class="d-flex align-items-center d-lg-none justify-content-center mt-4"
+              style="height: 320px">
               <img src="images/vg.png" class="w-75 d-lg-none" alt="" />
               <img src="images/ou.png" class="w-75 d-lg-none" alt="" />
               <img src="images/md.png" class="w-75 d-lg-none" alt="" />
@@ -487,11 +599,8 @@
             <div class="col-lg-4 col-md-6 px-4 image-rotation-container">
               <div class="container-fluid">
                 <div class="row mb-4">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                    style="height: 316px"
-                  >
-                    <img src="images/vg.png" class="w-50" alt="" />
+                  <div class="d-flex align-items-center justify-content-center" style="height: 316px">
+                    <img src="images/vg.png" class="w-50 active" alt="" />
                     <img src="images/den.svg" class="w-50" alt="" />
                     <img src="images/dex.svg" class="w-50" alt="" />
                     <img src="images/ff.svg" class="w-50" alt="" />
@@ -505,11 +614,8 @@
 
               <div class="container-fluid">
                 <div class="row mb-4">
-                  <div
-                    class="d-flex flex-column align-items-center justify-content-center"
-                    style="height: 316px"
-                  >
-                    <img src="images/ou.png" class="w-50" alt="" />
+                  <div class="d-flex flex-column align-items-center justify-content-center" style="height: 316px">
+                    <img src="images/ou.png" class="w-50 active" alt="" />
                     <img src="images/den.svg" class="w-50" alt="" />
                     <img src="images/dex.svg" class="w-50" alt="" />
                     <img src="images/ff.svg" class="w-50" alt="" />
@@ -523,11 +629,8 @@
 
               <div class="container-fluid">
                 <div class="row">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                    style="height: 320px"
-                  >
-                    <img src="images/md.png" class="w-50" alt="" />
+                  <div class="d-flex align-items-center justify-content-center" style="height: 320px">
+                    <img src="images/md.png" class="w-50 active" alt="" />
                     <img src="images/den.svg" class="w-50" alt="" />
                     <img src="images/dex.svg" class="w-50" alt="" />
                     <img src="images/ff.svg" class="w-50" alt="" />
@@ -548,9 +651,7 @@
             <h3 class="setting-color text-uppercase text-black fw-normal fs-5">
               INDUSTRIES WE SERVE
             </h3>
-            <ul
-              class="set-content list-unstyled d-flex align-items-center justify-content-center gap-3 flex-wrap mt-4"
-            >
+            <ul class="set-content list-unstyled d-flex align-items-center justify-content-center gap-3 flex-wrap mt-4">
               <li class="fs-5 text-white px-2 py-2">HEALTH & WELLNESS</li>
               <li class="fs-5 text-white px-2 py-2">BEAUTY</li>
               <li class="fs-5 text-white px-2 py-2">PHARMACEUTICAL</li>
@@ -587,7 +688,7 @@
     <!-- Black section -->
 
     <div class="black-section">
-      <div class="container">
+      <div class="container responsive-container">
         <div class="mb-5">
           <h4 class="main-color text-uppercase fs-5">our areas of expertise</h4>
           <h1 class="color-combination text-white">
@@ -598,7 +699,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-lg-6 mb-4 text-center">
-              <div class="setting-image">
+              <div class="setting-image me-5">
                 <img src="images/Spot_09_inverted.gif" class="w-100" alt="" />
               </div>
             </div>
@@ -607,30 +708,24 @@
               <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item border-0 bg-transparent">
                   <h2 class="accordion-header">
-                    <button
-                      class="accordion-button text-white border-0 bg-transparent fs-1"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseOne"
-                      aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseOne"
-                    >
+                    <button class="accordion-button text-white border-0 bg-transparent fs-1" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne">
                       Strategy Execution
+
+                      <span class="ms-auto">
+                        <i class="fa fa-plus"></i> <!-- Default plus icon -->
+                      </span>
+                      
                     </button>
                   </h2>
-                  <div
-                    id="panelsStayOpen-collapseOne"
-                    class="accordion-collapse collapse show"
-                  >
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
-                      <span class="fs-5 pb-5"
-                        >Turn strategic planning into strategic doing.</span
-                      >
+                      <span class="fs-5 pb-5">Turn strategic planning into strategic doing.</span>
                       <div class="mt-4">
                         <button
-                          class="d-flex align-items-center gap-3 btn-primary-setting text-white border-0 fw-bold px-3 py-2 text-uppercase rounded-pill"
-                        >
-                          explore how <i class="fa-solid fa-greater-than"></i>
+                          class="d-flex align-items-center gap-3 btn-primary-setting text-white border-0 fw-bold px-3 py-2 text-uppercase rounded-pill">
+                           explore how <i class="fa-solid fa-greater-than"></i>
                         </button>
                       </div>
                     </div>
@@ -639,30 +734,24 @@
 
                 <div class="accordion-item border-0 bg-transparent pt-3">
                   <h2 class="accordion-header">
-                    <button
-                      class="accordion-button text-white border-0 bg-transparent collapsed fs-1 Digital"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapseTwo"
-                    >
-                      Digital Transformation
+                    <button class="accordion-button text-white border-0 bg-transparent collapsed fs-1 Digital"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      <span class="">Digital Transformation</span>
+
+                      <span class="ms-auto">
+                        <i class="fa fa-minus"></i> <!-- Default minus icon -->
+                      </span>
+
                     </button>
                   </h2>
-                  <div
-                    id="panelsStayOpen-collapseTwo"
-                    class="accordion-collapse collapse"
-                  >
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                      <span class="fs-5"
-                        >Turn strategic planning into strategic doing.</span
-                      >
+                      <span class="fs-5">Turn strategic planning into strategic doing.</span>
                       <div class="mt-4">
                         <button
-                          class="d-flex align-items-center gap-3 btn-primary-setting text-white border-0 fw-bold px-3 py-2 text-uppercase rounded-pill"
-                        >
-                          explore how <i class="fa-solid fa-greater-than"></i>
+                          class="d-flex align-items-center gap-3 btn-primary-setting text-white border-0 fw-bold px-3 py-2 text-uppercase rounded-pill">
+                          <span>explore how</span> <i class="fa-solid fa-greater-than"></i>
                         </button>
                       </div>
                       <div class="border-bottom: 1px solid white;"></div>
@@ -672,30 +761,25 @@
 
                 <div class="accordion-item border-0 bg-transparent pt-3">
                   <h2 class="accordion-header">
-                    <button
-                      class="accordion-button text-white border-0 bg-transparent fs-1 collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="panelsStayOpen-collapseThree"
-                    >
+                    <button class="accordion-button text-white border-0 bg-transparent fs-1 collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree">
                       Culture Change
+
+                      <span class="ms-auto">
+                        <i class="fa fa-plus"></i> <!-- Default plus icon -->
+                      </span>
+
+
                     </button>
                   </h2>
-                  <div
-                    id="panelsStayOpen-collapseThree"
-                    class="accordion-collapse collapse"
-                  >
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                      <span class="fs-5"
-                        >Turn strategic planning into strategic doing.</span
-                      >
+                      <span class="fs-5">Turn strategic planning into strategic doing.</span>
                       <div class="mt-4">
                         <button
-                          class="d-flex align-items-center gap-3 btn-primary-setting text-white border-0 fw-bold px-3 py-2 text-uppercase rounded-pill"
-                        >
-                          explore how <i class="fa-solid fa-greater-than"></i>
+                          class="d-flex align-items-center gap-3 btn-primary-setting text-white border-0 fw-bold px-3 py-2 text-uppercase rounded-pill">
+                          <span>explore how</span> <i class="fa-solid fa-greater-than"></i>
                         </button>
                       </div>
                     </div>
@@ -704,17 +788,14 @@
               </div>
             </div>
 
-            <!-- <div class="col-12 col-md-6 mb-4 mb-md-0 d-none d-md-block order-md-1">
-            <div class="setting-image">
-              <img src="images/Spot_09_inverted.gif" class="w-100" alt="" />
-            </div>
-          </div> -->
+          
           </div>
         </div>
       </div>
 
       <!-- another black section -->
-      <div class="container-fluid px-5">
+
+      <div class="container-fluid set-all-padding px-5">
         <div class="set-the-border"></div>
 
         <div class="container-fluid">
@@ -722,9 +803,7 @@
             <div class="col-lg-9 pe-lg-5 pe-5 border-end animate-up">
               <div>
                 <h1 class="another-section pt-3 text-white">Methodology</h1>
-                <span class="span-color d-block text-uppercase fs-5"
-                  >change has changed</span
-                >
+                <span class="span-color d-block text-uppercase fs-5">change has changed</span>
               </div>
               <div class="paragraph fs-1 pt-4 text-white">
                 Traditional change management was designed for a world where
@@ -733,8 +812,7 @@
                 lasting transformation.
                 <div class="mt-4">
                   <button
-                    class="d-flex align-items-center gap-3 btn btn-secondary-set text-uppercase border-0 text-white rounded-pill px-4 py-3"
-                  >
+                    class="d-flex align-items-center gap-3 btn btn-secondary-set text-uppercase border-0 text-white rounded-pill px-4 py-3">
                     explore our methodology
                     <i class="fa-solid fa-greater-than"></i>
                   </button>
@@ -743,17 +821,11 @@
 
               <div class="container-fluid">
                 <div class="row mt-5">
-                  <div class="col-md-4 mb-4">
+                  <div class="col-md-4 multilple-text mb-4">
                     <div class="border-top pt-3">
                       <h4
-                        class="process-setting text-white text-uppercase fs-5 mt-4 mb-4 d-flex align-items-center gap-4"
-                      >
-                        <img
-                          src="images/process.svg"
-                          width="18"
-                          height="18"
-                          alt=""
-                        />
+                        class="process-setting text-white text-uppercase fs-5 mt-4 mb-4 d-flex align-items-center gap-4">
+                        <img src="images/process.svg" width="18" height="18" alt="" />
                         our process
                       </h4>
                       <p class="paragraph-setting lh-base fs-5 mt-3">
@@ -763,23 +835,16 @@
                     </div>
                     <div class="mt-5">
                       <button
-                        class="d-flex align-items-center gap-3 btn btn-success-set text-uppercase border-0 text-white rounded-pill p-3"
-                      >
+                        class="d-flex align-items-center gap-3 btn btn-success-set text-uppercase border-0 text-white rounded-pill p-3">
                         learn more<i class="fa-solid fa-greater-than"></i>
                       </button>
                     </div>
                   </div>
-                  <div class="col-md-4 mb-4">
+                  <div class="col-md-4 multilple-text mb-4">
                     <div class="border-top pt-3">
                       <h4
-                        class="process-setting text-white text-uppercase fs-5 mt-4 mb-4 d-flex align-items-center gap-4"
-                      >
-                        <img
-                          src="images/measure.svg"
-                          width="18"
-                          height="18"
-                          alt=""
-                        />measuring impact
+                        class="process-setting text-white text-uppercase fs-5 mt-4 mb-4 d-flex align-items-center gap-4">
+                        <img src="images/measure.svg" width="18" height="18" alt="" />measuring impact
                       </h4>
                       <p class="paragraph-setting fs-5">
                         Find out how we track progress and demonstrate the value
@@ -788,23 +853,16 @@
                     </div>
                     <div style="margin-top: 4.85rem">
                       <button
-                        class="d-flex align-items-center gap-3 btn btn-success-set text-uppercase border-0 text-white rounded-pill p-3"
-                      >
+                        class="d-flex align-items-center gap-3 btn btn-success-set text-uppercase border-0 text-white rounded-pill p-3">
                         learn more<i class="fa-solid fa-greater-than"></i>
                       </button>
                     </div>
                   </div>
-                  <div class="col-md-4 mb-4">
+                  <div class="col-md-4 multilple-text mb-4">
                     <div class="border-top pt-3">
                       <h4
-                        class="process-setting text-white text-uppercase fs-5 mt-4 mb-4 d-flex align-items-center gap-4"
-                      >
-                        <img
-                          src="images/compare.svg"
-                          width="18"
-                          height="18"
-                          alt=""
-                        />how we're different
+                        class="process-setting text-white text-uppercase fs-5 mt-4 mb-4 d-flex align-items-center gap-4">
+                        <img src="images/compare.svg" width="18" height="18" alt="" />how we're different
                       </h4>
                       <p class="paragraph-setting lh-base fs-5 mt-3">
                         See how we compare to other popular change management
@@ -814,8 +872,7 @@
                     </div>
                     <div class="mt-5">
                       <button
-                        class="d-flex align-items-center gap-3 btn btn-success-set text-uppercase border-0 text-white rounded-pill p-3"
-                      >
+                        class="d-flex align-items-center gap-3 btn btn-success-set text-uppercase border-0 text-white rounded-pill p-3">
                         learn more<i class="fa-solid fa-greater-than"></i>
                       </button>
                     </div>
@@ -825,31 +882,30 @@
             </div>
 
             <div class="col-lg-3">
-              <div class="d-flex flex-column align-items-start p-4">
+              <div class="d-flex flex-column align-items-start setting-padding p-4">
                 <div class="setting-border">
-                  <div class="text-start image-border mb-4">
-                    <img
-                      src="images/pexels-nurseryart-346707-300x200.jpg"
-                      class="blend"
-                      alt=""
-                    />
+                  <div class=" text-start image-border mb-4 py-5">
+                    <img src="images/pexels-nurseryart-346707-300x200.jpg" class="blend" alt="" />
+
+                    <div>
                     <p class="side-text text-white fs-5 mt-4">
                       A Map for the Change Journey Ahead
                     </p>
                     <span class="core">CORE CONCEPTS</span>
+                  </div>
+
                     <div class="border-bottom mt-5"></div>
                   </div>
 
                   <div class="text-start">
-                    <img
-                      src="images/process-mapping-tiltshiftbrighter-1024x655.jpg"
-                      class="blend"
-                      alt=""
-                    />
+                    <img src="images/process-mapping-tiltshiftbrighter-1024x655.jpg" class="blend" alt="" />
+
+                    <div>
                     <p class="side-text text-white fs-5 mt-4">
                       Unite for Change with a NOBL Rally
                     </p>
                     <span class="core">INSPIRATION AND STORIES OF CHANGE</span>
+                  </div>
                     <div class="border-bottom mt-5"></div>
                   </div>
                 </div>
@@ -865,21 +921,14 @@
       <div class="container-fluid px-5">
         <div class="row">
           <div class="col-md-12">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="680"
-              height="142"
-              viewBox="0 0 1207.998 250.982"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="680" height="142" viewBox="0 0 1207.998 250.982">
               <g transform="translate(18788.548 10483.6)">
                 <path
                   d="M74.679,12.468H11.471L4.5,26.411h.581L25.53,13.281H36.568L18.559,85.2l-4.183,6.274h18.59L31.8,85.435,49.814,13.281H61.549L74.679,26.411h.581Zm1.278,80.171c12.084,0,23.122-9.992,27.188-26.027,4.183-16.964-3.718-30.558-18.126-30.558-11.968,0-23.122,9.992-27.188,26.027C53.648,79.045,61.549,92.639,75.957,92.639Zm-.93-.813c-8.133,0-8.366-11.735-3.718-30.442,4.183-16.964,8.947-24.516,14.64-24.516,8.133,0,8.482,11.735,3.718,30.558C85.484,84.273,80.721,91.826,75.027,91.826Zm75.291-8.017h-.465L168.792,8.285l-16.15,3.37,1.743,7.436-4.531,17.893H141.6c-14.408,6.739-28.118,22.541-31.72,36.948-2.556,9.876.813,18.707,8.6,18.707,8.83,0,18.009-12.2,24.167-27.421h.813l-6.739,26.724h4.3c8.482,0,14.988-6.158,21.728-19.752l-.7-.232C157.522,80.439,154.733,83.808,150.318,83.808Zm-24.051-.349c-6.042,0-6.274-9.992-3.6-20.8a52.926,52.926,0,0,1,6.971-16.615h18.009l-1.627,6.623C142.533,66.38,134.168,83.46,126.267,83.46Zm90.047-11.5c-4.531,8.482-7.32,11.851-11.851,11.851h-.349l11.619-46.592H197.375c-14.756,6.855-27.769,22.773-31.487,37.529-2.208,9.179.465,17.893,7.785,17.893,8.249,0,16.731-11.968,23.006-27.188h.813l-6.623,26.491h4.3c8.482,0,14.988-6.158,21.728-19.752Zm-35.089,11.5c-5.577,0-4.648-10.225-2.556-18.59,1.743-6.855,4.531-14.291,7.436-18.823h16.15L200.512,52.2C197.375,63.359,189.242,83.46,181.225,83.46Zm78.544-46.244v7.669c0,14.872-.93,21.611-7.669,30.906l-8.249,11.387-3.486-49.962h-3.6c-7.669,0-13.594,8.249-18.474,19.752l.581.232c3.6-8.017,6.39-11.735,10.109-12.316l3.95,51.821-21.96,18.242h12.9l29.164-39.04c12.316-16.5,15.1-25.794,15.1-36.019V37.216Zm31.362-4.855a8.348,8.348,0,0,0,5.475-3.517,17.728,17.728,0,0,0,3.092-6.921,3.912,3.912,0,0,0,.142-.709,3.085,3.085,0,0,0-.028-.709h-6.184l2.666-12.368h12.141l-2.439,11.4a28.838,28.838,0,0,1-5.617,12.339A15.153,15.153,0,0,1,290,37.694Zm18.5,60.278c9.76,0,18.474-9.992,20.449-18.009,1.51-6.042-.813-9.528-4.764-11.968-3.834-2.324-10.341-4.88-13.943-7.436s-4.764-3.95-4.415-5.693c.349-1.278,1.51-2.091,3.718-2.091H335.66l2.44-10.225H325.436c-8.249,0-19.52,8.366-21.96,18.126-1.394,5.693.7,8.83,3.95,11.154,3.253,2.208,8.6,4.415,12.9,7.436,4.415,3.021,5.926,5.345,5.229,8.017-.465,1.627-1.859,3.37-5.229,3.37-5.345,0-14.988-3.6-23.586-8.366l-2.9,11.387C299.293,90.9,305.219,92.639,309.634,92.639Z"
-                  transform="translate(-18595.031 -10491.735)"
-                ></path>
+                  transform="translate(-18595.031 -10491.735)"></path>
                 <path
                   d="M66.7,213.912c30.548,0,48.212-17.664,54.238-32l-1.455-.623c-6.65,14.131-21.4,25.561-41.77,25.561-29.093,0-41.562-21.2-41.562-69.408,0-48.42,12.261-66.5,35.328-66.5,13.092,0,20.365,5.611,33.665,17.04l13.092,11.43h1.247L109.3,70.523H99.744c-10.183,0-19.534-1.039-28.262-1.039-39.276,0-70.032,29.925-70.032,73.357C1.45,184.819,27.011,213.912,66.7,213.912Zm124.686-2.078h39.068l-4.572-10.6V140.347c0-18.5-10.39-30.132-27.639-30.132-15.794,0-27.223,9.767-33.25,19.742V63.25l-34.912,6.026,5.2,14.754v117.2l-4.572,10.6h38.86L165,201.236V130.788c2.7-1.663,6.858-3.117,12.676-3.117,9.767,0,18.287,4.364,18.287,17.872v55.693Zm133.206-23.067V136.815c0-17.248-9.767-26.6-28.054-26.6-11.43,0-23.275,3.948-33.665,9.975s-18.287,14.131-20.365,23.483h27.847V118.112a41.18,41.18,0,0,1,7.481-.831c9.975,0,17.664,3.325,17.664,16.209v21.2a222.348,222.348,0,0,0-28.678,9.144c-14.131,5.611-23.483,13.3-23.483,26.184,0,14.131,9.975,23.067,24.729,23.067,14.962,0,23.483-8.1,27.639-17.04,2.078,7.9,9.351,15.794,22.028,15.794h17.456V188.767Zm-39.068,9.559c-8.728,0-13.508-7.273-13.508-19.742,0-9.351,2.7-13.715,7.689-16.625a70.761,70.761,0,0,1,15.794-5.611v38.445C293.215,196.872,290.513,198.326,285.526,198.326ZM407.3,211.834h39.068l-4.572-10.6V140.347c0-18.5-10.39-30.132-27.639-30.132-15.586,0-27.015,9.767-33.042,19.742V112.293H346.83l4.364,14.339v74.6l-4.572,10.6H385.69l-4.572-10.6V130.788a24.309,24.309,0,0,1,12.469-3.117c9.767,0,18.287,4.364,18.287,17.872v55.693Zm125.1-19.742H487.725c-6.65,0-11.222-2.909-11.222-9.559a10.2,10.2,0,0,1,4.156-8.728,50.987,50.987,0,0,0,24.106,5.611c25.561,0,43.64-15.17,43.64-35.743,0-12.261-6.858-22.443-18.079-28.054,1.455-1.455,3.533-1.87,7.273-1.87h22.651V91.512h-3.533c-13.508,0-23.067,12.053-27.431,23.482a55.052,55.052,0,0,0-23.483-4.78c-25.145,0-43.432,14.754-43.432,34.289,0,12.261,6.442,22.443,17.04,28.678-11.845,3.533-20.989,12.676-20.989,24.522,0,12.053,8.312,21.82,25.561,21.82h44.264c11.43,0,16.625,5.4,16.625,13.092,0,11.014-10.806,19.742-35.951,19.742-27.223,0-38.237-9.559-38.237-24.937v-3.325H451.15a22.653,22.653,0,0,0-.623,5.4c0,13.092,12.053,26.392,46.757,26.392,46.965,0,63.8-23.275,63.8-40.523C561.082,199.781,550.068,192.092,532.4,192.092Zm-27.015-80.63c9.351,0,14.547,10.39,14.547,33.25,0,23.275-5.2,33.457-14.547,33.457-9.144,0-14.339-10.391-14.339-33.457S496.245,111.462,505.389,111.462Zm147.545,71.694c-5.2,5.611-14.131,9.975-26.6,9.975-26.6,0-38.445-20.573-38.653-47.588h65.044c-2.909-20.365-18.287-35.328-42.185-35.328-27.639,0-48.212,23.067-48.212,53.615,0,30.132,19.118,50.082,48.42,50.082,24.314,0,38.029-14.962,42.6-30.548Zm-47.8-71.071c10.806,0,15.17,9.767,16.625,32H587.681C587.889,120.4,594.955,112.085,605.138,112.085ZM781.36,211.834h38.86l-4.364-10.6V140.347c0-18.5-10.391-30.132-27.015-30.132-15.378,0-25.976,9.559-32.211,19.95-2.494-9.975-11.014-19.95-26.6-19.95-15.17,0-25.768,9.559-32,19.118v-17.04H663.74l4.364,14.339v74.6l-4.572,10.6H702.6l-4.572-10.6V130.58a21.713,21.713,0,0,1,11.637-2.909c9.559,0,17.248,4.156,17.248,17.248v56.316l-4.364,10.6h38.86l-4.572-10.6V130.788c2.7-1.87,6.442-3.117,11.637-3.117,9.351,0,17.456,4.156,17.456,17.872v55.693Zm133.206-23.067V136.815c0-17.248-9.767-26.6-28.054-26.6-11.43,0-23.275,3.948-33.665,9.975s-18.287,14.131-20.365,23.483h27.846V118.112a41.18,41.18,0,0,1,7.481-.831c9.975,0,17.664,3.325,17.664,16.209v21.2A222.348,222.348,0,0,0,856.8,163.83c-14.131,5.611-23.482,13.3-23.482,26.184,0,14.131,9.975,23.067,24.729,23.067,14.962,0,23.483-8.1,27.639-17.04,2.078,7.9,9.351,15.794,22.028,15.794h17.456V188.767ZM875.5,198.326c-8.728,0-13.508-7.273-13.508-19.742,0-9.351,2.7-13.715,7.689-16.625a70.759,70.759,0,0,1,15.794-5.611v38.445C883.187,196.872,880.486,198.326,875.5,198.326ZM970.675,63.25l-34.912,6.026,5.2,14.754v117.2l-4.572,10.6h38.86l-4.572-10.6Zm24.937,77.305,9.559-8.52,32.626-18.7v-1.039h-34.081v19.326l-31.379,27.639,35.743,52.576h35.535Zm136.531,42.6c-5.2,5.611-14.131,9.975-26.6,9.975-26.6,0-38.445-20.573-38.653-47.588h65.044c-2.909-20.365-18.287-35.328-42.185-35.328-27.639,0-48.212,23.067-48.212,53.615,0,30.132,19.119,50.082,48.42,50.082,24.314,0,38.029-14.962,42.6-30.548Zm-47.8-71.071c10.806,0,15.17,9.767,16.625,32h-34.081C1067.1,120.4,1074.164,112.085,1084.347,112.085Zm123.023-.623c-14.962,0-25.976,16.417-30.34,28.47V112.293h-34.081l4.364,14.339v74.6l-4.572,10.6h39.068l-4.572-10.6V141.387a11.353,11.353,0,0,1,4.987-.831h27.223V111.462Z"
-                  transform="translate(-18789.998 -10488.507)"
-                ></path>
+                  transform="translate(-18789.998 -10488.507)"></path>
               </g>
             </svg>
 
@@ -888,27 +937,19 @@
                 <ul class="glide__slides mt-5">
                   <li class="glide__slide border-start border-black">
                     <div style="display: flex; flex-direction: column;" class="px-4">
-                      <div
-                        class="change text-uppercase text-black fw-bold d-md-none d-lg-block"
-                      >
+                      <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
                         change
                       </div>
 
-                      <img
-                        src="images/nik-LUYD2b7MNrg-unsplash-scaled-1-1024x682.jpg"
-                        alt=""
-                        class="effect-img"
-                        style="max-width: 100%"
-                      />
+                      <img src="images/nik-LUYD2b7MNrg-unsplash-scaled-1-1024x682.jpg" alt="" class="effect-img"
+                        style="max-width: 100%" />
 
                       <div class="text-setting">
                         <h3 class="text-black fs-3 pt-4 mb-3">
                           How to Overcome Ambivalence as a Leader of Change
                         </h3>
 
-                        <div
-                          class="change text-uppercase text-black fw-bold mt-3 d-md-block d-lg-none"
-                        >
+                        <div class="change text-uppercase text-black fw-bold mt-3 d-md-block d-lg-none">
                           change
                         </div>
 
@@ -919,9 +960,7 @@
                       </div>
 
                       <div class="mt-4">
-                        <button
-                          class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block"
-                        >
+                        <button class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block">
                           read article
                           <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
                         </button>
@@ -930,128 +969,101 @@
                   </li>
 
 
-                    <li class="glide__slide border-start border-black">
+                  <li class="glide__slide border-start border-black">
 
                     <div style="display: flex; flex-direction: column;" class="px-4">
-                    <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
-                      barriers to change
-                    </div>
-                    <img
-                      src="images/barrier to change.jpg"
-                      alt=""
-                      class="effect-img"
-                      style="max-width: 100%"
-                      
-                      
-                    />
-                    <div class="text-setting">
-                      <h3 class="text-black fs-3 pt-4 mb-5">
-                        Barriers to Change: Politics
-                      </h3>
-
-                      <div class="change text-uppercase text-black fw-bold mt-5 d-md-block d-lg-none">
+                      <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
                         barriers to change
                       </div>
+                      <img src="images/barrier to change.jpg" alt="" class="effect-img" style="max-width: 100%" />
+                      <div class="text-setting">
+                        <h3 class="text-black fs-3 pt-4 mb-5">
+                          Barriers to Change: Politics
+                        </h3>
 
-                      <p class="pt-5 concept-color d-md-none d-lg-block">
-                        Influence is part of leading—and if you don’t do it, others will.
-                      </p>
+                        <div class="change text-uppercase text-black fw-bold mt-5 d-md-block d-lg-none">
+                          barriers to change
+                        </div>
+
+                        <p class="pt-5 concept-color d-md-none d-lg-block">
+                          Influence is part of leading—and if you don’t do it, others will.
+                        </p>
+                      </div>
+
+                      <div class="pt-4">
+                        <button class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block">
+                          read article
+                          <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
+                        </button>
+                      </div>
                     </div>
-
-                    <div class="pt-4">
-                    <button
-                      class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block"
-                    >
-                      read article
-                      <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
-                    </button>
-                  </div>
-                </div>
                   </li>
 
 
                   <li class="glide__slide border-start border-black">
-                    
-                    <div style="display: flex; flex-direction: column;" class="px-4" >
-                    <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
-                      core concepts
-                    </div>
-                    <img
-                      src="images/cristofer-maximilian.jpg"
-                      alt=""
-                      class="effect-img"
-                      style="max-width: 100%"
-                     
-                      
-                      
-                    />
-                    <div class="text-setting">
-                      <h3 class="text-black fs-3 pt-4 mb-3">
-                        What Leaders Must Know About Organizational Resilience
-                      </h3>
 
-                      <div class="change text-uppercase text-black fw-bold d-md-block d-lg-none">
+                    <div style="display: flex; flex-direction: column;" class="px-4">
+                      <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
                         core concepts
                       </div>
+                      <img src="images/cristofer-maximilian.jpg" alt="" class="effect-img" style="max-width: 100%" />
+                      <div class="text-setting">
+                        <h3 class="text-black fs-3 pt-4 mb-3">
+                          What Leaders Must Know About Organizational Resilience
+                        </h3>
+
+                        <div class="change text-uppercase text-black fw-bold d-md-block d-lg-none">
+                          core concepts
+                        </div>
 
 
-                      <p class="pt-5 concept-color d-md-none d-lg-block">
-                        This often misunderstood concept is critical for
-                        navigating disruption and uncertainty
-                      </p>
+                        <p class="pt-5 concept-color d-md-none d-lg-block">
+                          This often misunderstood concept is critical for
+                          navigating disruption and uncertainty
+                        </p>
+                      </div>
+
+                      <div class="mt-4">
+                        <button class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block">
+                          read article
+                          <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
+                        </button>
+                      </div>
                     </div>
-
-                    <div class="mt-4">
-                    <button
-                      class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block"
-                    >
-                      read article
-                      <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
-                    </button>
-                  </div>
-                </div>
                   </li>
 
 
                   <li class="glide__slide border-start border-black">
-                    
-                    <div style="display: flex; flex-direction: column;" class="px-4">
-                    <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
-                      inspiration and stories of change
-                    </div>
-                    <img
-                      src="images/apollo08_earthrise.jpg"
-                      alt=""
-                      class="effect-img"
-                      style="max-width: 100%"
-                    
-                      
-                    />
-                    <div class="text-setting">
-                      <h3 class="text-black fs-3 pt-4 mb-3">
-                        In the Midst of Uncertainty, Shoot for the Moon
-                      </h3>
 
-                      <div class="change text-uppercase text-black fw-bold mt-5 d-md-block d-lg-none">
+                    <div style="display: flex; flex-direction: column;" class="px-4">
+                      <div class="change text-uppercase text-black fw-bold d-md-none d-lg-block">
                         inspiration and stories of change
                       </div>
+                      <img src="images/apollo08_earthrise.jpg" alt="" class="effect-img" style="max-width: 100%" />
+                      <div class="text-setting">
+                        <h3 class="text-black fs-3 pt-4 mb-3">
+                          In the Midst of Uncertainty, Shoot for the Moon
+                        </h3>
+
+                        <div class="change text-uppercase text-black fw-bold mt-5 d-md-block d-lg-none">
+                          inspiration and stories of change
+                        </div>
 
 
-                      <p class="pt-5 concept-color d-md-none d-lg-block">
-                        Organizations need a beckoning frontier, not just to
-                        discover new business models and revenue streams, but to
-                        renew the human spirit and fend off the crush
-                      </p>
+                        <p class="pt-5 concept-color d-md-none d-lg-block">
+                          Organizations need a beckoning frontier, not just to
+                          discover new business models and revenue streams, but to
+                          renew the human spirit and fend off the crush
+                        </p>
+                      </div>
+
+                      <button
+                        class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block mt-4"
+                        style="width: fit-content;">
+                        read article
+                        <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
+                      </button>
                     </div>
-
-                    <button
-                      class="text-uppercase rounded-pill btn btn-outline-dark px-4 py-3 d-md-none d-lg-block mt-4"
-                      style="width: fit-content;"
-                    >
-                      read article
-                      <i class="fa-solid fa-greater-than btn-icon ms-2"></i>
-                    </button>
-                  </div>
                   </li>
 
                 </ul>
@@ -1069,8 +1081,7 @@
       <div class="container-fluid">
         <div class="row">
           <div
-            class="col-lg-7 d-flex align-items-center justify-content-center image-section border-end border-black p-3"
-          >
+            class="col-lg-7 d-flex align-items-center justify-content-center image-section border-end border-black p-3">
             <img src="images/Spot_14.gif" class="w-50" alt="" />
           </div>
 
@@ -1084,60 +1095,54 @@
             </div>
 
             <form class="mt-11">
-              <div class="mb-3">
-                <label for="firstName" class="form-label">First Name *</label>
+              <div class="mb-3 form-name d-flex gap-5">
+              
+                <input type="text" id="input-box" placeholder="First Name *"  class="form-control-set" />
 
-                <input type="text" class="form-control" />
+                <input type="text" id="input-box" placeholder="Last Name *"  class="form-control-set" />
+              
+              </div>
+
+            
+
+              <div class="mb-3">
+               
+                <input type="text" id="input-box" placeholder="Email Address *"  class="form-control-setting" style="border-bottom: 1px solid #d2d2d2; width: 100%;"/>
               </div>
 
               <div class="mb-3">
-                <label for="lastName" class="form-label">Last Name *</label>
-                <input type="text" class="form-control" />
+               
+                <input type="text" id="input-box" placeholder="Organization *"  class="form-control-setting" style="border-bottom: 1px solid #d2d2d2; width: 100%;"/>
               </div>
+
               <div class="mb-3">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" class="form-control" />
+             
+                <input type="text" id="input-box" placeholder="Country *"  class="form-control-setting" style="border-bottom: 1px solid #d2d2d2; width: 100%;"/>
               </div>
+
               <div class="mb-3">
-                <label for="organization" class="form-label"
-                  >Organization *</label
-                >
-                <input type="text" class="form-control" />
+              
+                <input type="text" id="input-box" placeholder="How did you find us? *"  class="form-control-setting" style="border-bottom: 1px solid #d2d2d2; width: 100%;"/>
               </div>
+
               <div class="mb-3">
-                <label for="country" class="form-label">Country *</label>
-                <input type="text" class="form-control" />
+              
+                <textarea placeholder="Describe the conversation you'd like to start with us...*" class="form-control-setting" rows="4" style="border-bottom: 1px solid #d2d2d2; width: 100%;"></textarea>
               </div>
-              <div class="mb-3">
-                <label for="howDidYouFindUs" class="form-label"
-                  >How did you find us? *</label
-                >
-                <input type="text" class="form-control" />
-              </div>
-              <div class="mb-3">
-                <label for="conversationDescription" class="form-label"
-                  >Describe the conversation you'd like to start with us...
-                  *</label
-                >
-                <textarea class="form-control" rows="4"></textarea>
-              </div>
+
+
               <div class="form-check mb-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="newsletterSignUp"
-                />
+                <input class="form-check-input fs-4 rounded-circle" type="checkbox" id="newsletterSignUp" />
                 <label class="form-check-label" for="newsletterSignUp">
                   Also sign up to receive our newsletter
                 </label>
               </div>
-              <button
-                type="submit"
-                class="btn btn-custom px-3 py-2 text-uppercase"
-              >
-                Submit
+
+              <button type="submit" class="btn btn-custom px-3 py-2 text-uppercase">
+                <span class="media-setting">Submit</span>
                 <i class="fa-solid fa-greater-than"></i>
               </button>
+
             </form>
           </div>
         </div>
@@ -1149,36 +1154,27 @@
     <div class="modern-section">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-6 px-5">
+          <div class="col-12 col-md-6 px-5 px-md-3 set-of-padding">
             <p class="footer-paragraph text-white mt-4 fs-1">
               NOBL is the modern change and transformation partner.
             </p>
             <div>
-              <button
-                type="submit"
-                class="set-font-size btn btn-custom px-4 py-3 text-uppercase"
-              >
+              <button type="submit" class="set-font-size btn btn-custom px-4 py-3 text-uppercase">
                 Contact us
                 <i class="fa-solid fa-greater-than"></i>
               </button>
             </div>
           </div>
 
-          <div class="col-6 col-md-3">
-            <ul class="list-unstyled set-font pt-5 me-3">
-              <li
-                class="text-white fs-5 py-4 border-top border-bottom border-secondary"
-              >
+          <div class="col-6 col-lg-3 px-md-3">
+            <ul class="list-unstyled set-font pt-5 me-3 responsive-font">
+              <li class="text-white fs-5 py-4 border-top border-bottom border-secondary">
                 About NOBL
               </li>
-              <li
-                class="text-white fs-5 py-4 border-top border-bottom border-secondary"
-              >
+              <li class="text-white fs-5 py-4 border-top border-bottom border-secondary">
                 Capabilities
               </li>
-              <li
-                class="text-white fs-5 py-4 border-top border-bottom border-secondary"
-              >
+              <li class="text-white fs-5 py-4 border-top border-bottom border-secondary">
                 Methodology
               </li>
               <li class="text-white fs-5 py-4 border-top border-secondary">
@@ -1187,16 +1183,12 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-lg-3 responsive-font">
             <ul class="list-unstyled set-font pt-5 me-4">
-              <li
-                class="text-white fs-5 py-4 border-top border-bottom border-secondary"
-              >
+              <li class="text-white fs-5 py-4 border-top border-bottom border-secondary">
                 Careers
               </li>
-              <li
-                class="text-white fs-5 py-4 border-top border-bottom border-secondary"
-              >
+              <li class="text-white fs-5 py-4 border-top border-bottom border-secondary">
                 Contact Us
               </li>
               <li class="text-white fs-5 py-4 border-top border-secondary">
@@ -1205,29 +1197,21 @@
             </ul>
           </div>
 
-          <div class="col-6 main-footer px-5">
-            <div
-              class="svg-container bg-secondary rounded-circle d-inline-block p-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="23"
-                viewBox="0 0 24 23"
-              >
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-start  main-footer px-5 mb-3 pt-5">
+            <div class="svg-container bg-secondary rounded-circle d-inline-block p-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
                 <path
                   d="M4.98,3.5A2.48,2.48,0,1,1,2.5,1,2.49,2.49,0,0,1,4.98,3.5ZM5,8H0V24H5Zm7.982,0H8.014V24h4.969V15.6c0-4.67,6.029-5.052,6.029,0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8Z"
-                  transform="translate(0 -1)"
-                  fill="#fff"
-                ></path>
+                  transform="translate(0 -1)" fill="#fff"></path>
               </svg>
             </div>
           </div>
-          <div class="col-6">
-            <div class="py-4">
-              <span class="set-font text-white fs-5"
-                >@2024 NOBL Collective</span
-              >
+          <div class="col-12 col-md-6 d-flex pt-5">
+            <div class="py-3">
+              <span class="set-font text-white fs-5">@2024 NOBL Collective</span>
             </div>
           </div>
         </div>
@@ -1237,13 +1221,17 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="/navbar.js"></script>
-    <script src="/animation.js"></script>
-    <script src="/methodology.js"></script>
-    <script src="/content.js"></script>
-    <script src="/images.js"></script>
-    <script src="/script.js"></script>
-    <script src="/script-img.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="/navbar.js"></script>
+  <!-- <script src="/text-animation.js"></script> -->
+  <script src="/offcanva.js"></script>
+  <script src="/animation.js"></script>
+  <script src="/methodology.js"></script>
+  <script src="/accordian.js"></script>
+  <script src="/content.js"></script>
+  <!-- <script src="/images.js"></script> -->
+  <script src="/script.js"></script>
+  <script src="/script-img.js"></script>
+</body>
+
 </html>
